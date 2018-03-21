@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		936752FF2060A2BC009C7651 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936752FE2060A2BC009C7651 /* AppDelegate.swift */; };
-		936753012060A2BC009C7651 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936753002060A2BC009C7651 /* ViewController.swift */; };
+		936753012060A2BC009C7651 /* OneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936753002060A2BC009C7651 /* OneVC.swift */; };
 		936753042060A2BC009C7651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936753022060A2BC009C7651 /* Main.storyboard */; };
 		936753062060A2BC009C7651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 936753052060A2BC009C7651 /* Assets.xcassets */; };
 		936753092060A2BC009C7651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936753072060A2BC009C7651 /* LaunchScreen.storyboard */; };
 		936753112060B3AB009C7651 /* TwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936753102060B3AB009C7651 /* TwoVC.swift */; };
+		9367531320617CDB009C7651 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9367531220617CDB009C7651 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		936752FB2060A2BC009C7651 /* Companies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Companies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		936752FE2060A2BC009C7651 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		936753002060A2BC009C7651 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		936753002060A2BC009C7651 /* OneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneVC.swift; sourceTree = "<group>"; };
 		936753032060A2BC009C7651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		936753052060A2BC009C7651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		936753082060A2BC009C7651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9367530A2060A2BC009C7651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		936753102060B3AB009C7651 /* TwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoVC.swift; sourceTree = "<group>"; };
+		9367531220617CDB009C7651 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		936752F22060A2BC009C7651 = {
 			isa = PBXGroup;
 			children = (
+				9367531220617CDB009C7651 /* CustomCell.swift */,
 				936752FD2060A2BC009C7651 /* Companies */,
 				936752FC2060A2BC009C7651 /* Products */,
 			);
@@ -57,9 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				936752FE2060A2BC009C7651 /* AppDelegate.swift */,
-				936753002060A2BC009C7651 /* ViewController.swift */,
-				936753022060A2BC009C7651 /* Main.storyboard */,
+				936753002060A2BC009C7651 /* OneVC.swift */,
 				936753102060B3AB009C7651 /* TwoVC.swift */,
+				936753022060A2BC009C7651 /* Main.storyboard */,
 				936753052060A2BC009C7651 /* Assets.xcassets */,
 				936753072060A2BC009C7651 /* LaunchScreen.storyboard */,
 				9367530A2060A2BC009C7651 /* Info.plist */,
@@ -139,8 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				936753012060A2BC009C7651 /* ViewController.swift in Sources */,
+				936753012060A2BC009C7651 /* OneVC.swift in Sources */,
 				936753112060B3AB009C7651 /* TwoVC.swift in Sources */,
+				9367531320617CDB009C7651 /* CustomCell.swift in Sources */,
 				936752FF2060A2BC009C7651 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
