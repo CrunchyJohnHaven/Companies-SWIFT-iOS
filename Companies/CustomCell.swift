@@ -14,5 +14,6 @@ class CustomCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var dueDate: UILabel!
     
 }
