@@ -15,6 +15,7 @@
 		936753112060B3AB009C7651 /* TwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936753102060B3AB009C7651 /* TwoVC.swift */; };
 		9367531320617CDB009C7651 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9367531220617CDB009C7651 /* CustomCell.swift */; };
 		93A02E8620631A49004C82F6 /* Companies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93A02E8420631A49004C82F6 /* Companies.xcdatamodeld */; };
+		93A0B51620632A5000416999 /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A0B51520632A5000416999 /* HideKeyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		936753102060B3AB009C7651 /* TwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoVC.swift; sourceTree = "<group>"; };
 		9367531220617CDB009C7651 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		93A02E8520631A49004C82F6 /* Companies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Companies.xcdatamodel; sourceTree = "<group>"; };
+		93A0B51520632A5000416999 /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				936752FE2060A2BC009C7651 /* AppDelegate.swift */,
 				936753002060A2BC009C7651 /* OneVC.swift */,
+				93A0B51520632A5000416999 /* HideKeyboard.swift */,
 				93A02E8420631A49004C82F6 /* Companies.xcdatamodeld */,
 				936753102060B3AB009C7651 /* TwoVC.swift */,
 				936753022060A2BC009C7651 /* Main.storyboard */,
@@ -149,6 +152,7 @@
 				936753112060B3AB009C7651 /* TwoVC.swift in Sources */,
 				9367531320617CDB009C7651 /* CustomCell.swift in Sources */,
 				93A02E8620631A49004C82F6 /* Companies.xcdatamodeld in Sources */,
+				93A0B51620632A5000416999 /* HideKeyboard.swift in Sources */,
 				936752FF2060A2BC009C7651 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

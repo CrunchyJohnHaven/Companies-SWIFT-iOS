@@ -11,6 +11,8 @@ import CoreData
 
 class TwoVC: UIViewController {
     weak var delegate: TwoVCDelegate?
+    var edit: List?
+    var item: [List]?
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var detailsField: UITextView!
     @IBOutlet weak var dateField: UIDatePicker!
@@ -18,6 +20,12 @@ class TwoVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+        if edit != nil {
+            titleField.text = edit?.title
+            detailsField.text = edit?.detail
+        }
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,22 +36,29 @@ class TwoVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func addAction(_ sender: UIButton) {
-        let item = NSEntityDescription.insertNewObject(forEntityName: "List", into:
-            managedObjectContext ) as! List
-        item.title = titleField.text
-        item.detail = detailsField.text
-        let dateFormatter: DateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM/dd/yyyy hh:mm a"
-        let date = dateFormatter.string(from: self.dateField.date)
-        item.due_date = date
-        do {
-            try managedObjectContext.save()
-        } catch {
-            print(error)
+        if edit != nil {
+            if let destination = delegate {
+                destination.catchData(oldItem: (edit)!)
+            }
+            
         }
-        if let destination = delegate {
-            destination.refreshTable()
+            print("NEW")
+            let item = NSEntityDescription.insertNewObject(forEntityName: "List", into:
+                managedObjectContext ) as! List
+            item.title = titleField.text
+            item.detail = detailsField.text
+            let dateFormatter: DateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MM/dd/yyyy hh:mm a"
+            let date = dateFormatter.string(from: self.dateField.date)
+            item.due_date = date
+            do {
+                try managedObjectContext.save()
+            } catch {
+                print(error)
+            }
+            if let destination = delegate {
+                destination.refreshTable()
+            }
+            dismiss(animated: true, completion: nil)
         }
-        dismiss(animated: true, completion: nil)
     }
-}
